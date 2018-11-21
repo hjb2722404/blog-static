@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>css3新特性+less试验（2）——transform | 国王说</title>
+    <meta name="description" content="国王何博士的生活记录">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.2e185082.css" as="style"><link rel="preload" href="/assets/js/app.ead8df97.js" as="script"><link rel="preload" href="/assets/js/45.0b55823e.js" as="script"><link rel="prefetch" href="/assets/js/10.1017c9d8.js"><link rel="prefetch" href="/assets/js/11.7fce1b1e.js"><link rel="prefetch" href="/assets/js/12.2e3bf50c.js"><link rel="prefetch" href="/assets/js/13.2575f685.js"><link rel="prefetch" href="/assets/js/14.1bb2b4f2.js"><link rel="prefetch" href="/assets/js/15.dda03764.js"><link rel="prefetch" href="/assets/js/16.fea1d20c.js"><link rel="prefetch" href="/assets/js/17.e50dcb9b.js"><link rel="prefetch" href="/assets/js/18.efd3f072.js"><link rel="prefetch" href="/assets/js/19.b7f8dac4.js"><link rel="prefetch" href="/assets/js/2.19b0dc99.js"><link rel="prefetch" href="/assets/js/20.05087f96.js"><link rel="prefetch" href="/assets/js/21.a2585747.js"><link rel="prefetch" href="/assets/js/22.48f65c5a.js"><link rel="prefetch" href="/assets/js/23.02d3d317.js"><link rel="prefetch" href="/assets/js/24.f6b65d74.js"><link rel="prefetch" href="/assets/js/25.1c218641.js"><link rel="prefetch" href="/assets/js/26.b4a1d3b5.js"><link rel="prefetch" href="/assets/js/27.0b23edb0.js"><link rel="prefetch" href="/assets/js/28.97c60e66.js"><link rel="prefetch" href="/assets/js/29.7070549f.js"><link rel="prefetch" href="/assets/js/3.8a2f839d.js"><link rel="prefetch" href="/assets/js/30.f696bd8c.js"><link rel="prefetch" href="/assets/js/31.db6ee67c.js"><link rel="prefetch" href="/assets/js/32.68c934a2.js"><link rel="prefetch" href="/assets/js/33.28adedf7.js"><link rel="prefetch" href="/assets/js/34.1ae3f31c.js"><link rel="prefetch" href="/assets/js/35.a27aa42b.js"><link rel="prefetch" href="/assets/js/36.2c36116d.js"><link rel="prefetch" href="/assets/js/37.2d379f91.js"><link rel="prefetch" href="/assets/js/38.c2e0280f.js"><link rel="prefetch" href="/assets/js/39.9a138254.js"><link rel="prefetch" href="/assets/js/4.dfea2b60.js"><link rel="prefetch" href="/assets/js/40.10521c1e.js"><link rel="prefetch" href="/assets/js/41.6d1c3c37.js"><link rel="prefetch" href="/assets/js/42.613f6fa6.js"><link rel="prefetch" href="/assets/js/43.644f89cb.js"><link rel="prefetch" href="/assets/js/44.6b95669a.js"><link rel="prefetch" href="/assets/js/46.ab7b9456.js"><link rel="prefetch" href="/assets/js/47.ffd63a58.js"><link rel="prefetch" href="/assets/js/48.02a68374.js"><link rel="prefetch" href="/assets/js/49.be43475a.js"><link rel="prefetch" href="/assets/js/5.29595ea1.js"><link rel="prefetch" href="/assets/js/50.64a710f5.js"><link rel="prefetch" href="/assets/js/51.48a01f2b.js"><link rel="prefetch" href="/assets/js/52.98d26fd4.js"><link rel="prefetch" href="/assets/js/53.e6c45cc2.js"><link rel="prefetch" href="/assets/js/54.6a350247.js"><link rel="prefetch" href="/assets/js/55.dd0a42bf.js"><link rel="prefetch" href="/assets/js/56.24c1ec5c.js"><link rel="prefetch" href="/assets/js/57.70a788e6.js"><link rel="prefetch" href="/assets/js/58.3e44f315.js"><link rel="prefetch" href="/assets/js/59.456021da.js"><link rel="prefetch" href="/assets/js/6.609a1a07.js"><link rel="prefetch" href="/assets/js/60.a8d4247b.js"><link rel="prefetch" href="/assets/js/61.7d910e19.js"><link rel="prefetch" href="/assets/js/62.29a244b8.js"><link rel="prefetch" href="/assets/js/63.823413d9.js"><link rel="prefetch" href="/assets/js/64.ce1e84e1.js"><link rel="prefetch" href="/assets/js/65.40e53246.js"><link rel="prefetch" href="/assets/js/66.a0628caf.js"><link rel="prefetch" href="/assets/js/67.a13c1a1c.js"><link rel="prefetch" href="/assets/js/68.ec323706.js"><link rel="prefetch" href="/assets/js/69.d8053fcc.js"><link rel="prefetch" href="/assets/js/7.361f8558.js"><link rel="prefetch" href="/assets/js/70.fbe6b8b8.js"><link rel="prefetch" href="/assets/js/71.a63191e5.js"><link rel="prefetch" href="/assets/js/72.2356be99.js"><link rel="prefetch" href="/assets/js/73.3d7ebefd.js"><link rel="prefetch" href="/assets/js/74.fb4bb5cf.js"><link rel="prefetch" href="/assets/js/75.63436a22.js"><link rel="prefetch" href="/assets/js/76.6f5d972d.js"><link rel="prefetch" href="/assets/js/77.1f5cac04.js"><link rel="prefetch" href="/assets/js/78.835937ec.js"><link rel="prefetch" href="/assets/js/79.9f4531c9.js"><link rel="prefetch" href="/assets/js/8.5d2b4e47.js"><link rel="prefetch" href="/assets/js/80.9d4b820b.js"><link rel="prefetch" href="/assets/js/81.8d7f4b8b.js"><link rel="prefetch" href="/assets/js/82.c9a97315.js"><link rel="prefetch" href="/assets/js/83.49148838.js"><link rel="prefetch" href="/assets/js/84.a1a254c4.js"><link rel="prefetch" href="/assets/js/85.eab49b81.js"><link rel="prefetch" href="/assets/js/86.825d20c5.js"><link rel="prefetch" href="/assets/js/87.852254bc.js"><link rel="prefetch" href="/assets/js/88.71609026.js"><link rel="prefetch" href="/assets/js/89.af91a4e1.js"><link rel="prefetch" href="/assets/js/9.2039d6db.js"><link rel="prefetch" href="/assets/js/90.fb5586e5.js"><link rel="prefetch" href="/assets/js/91.a75fa19c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2e185082.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">国王说</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">技术迷思</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech/front/" class="nav-link router-link-active">前端乱炖</a></li><li class="dropdown-item"><!----> <a href="/tech/back/" class="nav-link">后端打滚</a></li><li class="dropdown-item"><!----> <a href="/tech/tools/" class="nav-link">工具方法</a></li><li class="dropdown-item"><!----> <a href="/tech/other/" class="nav-link">其他一切</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">生活哲思</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/life/movie/" class="nav-link">影评系列</a></li><li class="dropdown-item"><!----> <a href="/life/arch/" class="nav-link">杂文随想</a></li><li class="dropdown-item"><!----> <a href="/life/poem/" class="nav-link">诗歌骈文</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于我</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">技术迷思</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech/front/" class="nav-link router-link-active">前端乱炖</a></li><li class="dropdown-item"><!----> <a href="/tech/back/" class="nav-link">后端打滚</a></li><li class="dropdown-item"><!----> <a href="/tech/tools/" class="nav-link">工具方法</a></li><li class="dropdown-item"><!----> <a href="/tech/other/" class="nav-link">其他一切</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">生活哲思</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/life/movie/" class="nav-link">影评系列</a></li><li class="dropdown-item"><!----> <a href="/life/arch/" class="nav-link">杂文随想</a></li><li class="dropdown-item"><!----> <a href="/life/poem/" class="nav-link">诗歌骈文</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于我</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>css3新特性+less试验（2）——transform</span> <!----></p> <ul class="sidebar-group-items"></ul></div></li></ul> </div> <div class="page"> <div class="content"><p>本次试验将深入探索CSS3的新特性——transform(变形)。</p> <p>###<strong>实验对象：transform</strong></p> <blockquote>
+  transform：顾名思义，就是【变形】的意思，在CSS3中的变形有以下几种：旋转 （rotate） |  扭曲 （skew）  |  缩放 （scale） |  移动 （translate）  |  矩阵变形 （matrix），注意，不同于gradient是background属性的值，transform本身是一个属性。
+</blockquote> <p>###<strong>语法</strong></p> <pre><code>    transform:transform: none | rotate | scale | skew | translate |matrix;
+</code></pre> <p>###<strong>试验</strong></p> <p>####1、rotate [旋转]</p> <p>#####用法</p> <pre><code>    transform:rotate(&amp;lt;angle&amp;gt;) 
+</code></pre> <p>#####html</p> <pre class="prettyprint"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;box1&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;box2&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;box3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;box4&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;box5&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;box6&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre> <p>#####less</p> <pre class="prettyprint"><span class="hljs-preprocessor">.rotate</span>(@angle) {
+  transform: rotate(@angle)<span class="hljs-comment">;</span>
+}
+
+<span class="hljs-preprocessor">.box</span> {
+  width: <span class="hljs-number">100</span>px<span class="hljs-comment">;</span>
+  height: <span class="hljs-number">100</span>px<span class="hljs-comment">;</span>
+  margin-left: <span class="hljs-number">100</span>px<span class="hljs-comment">;</span>
+  margin-top: <span class="hljs-number">100</span>px<span class="hljs-comment">;</span>
+  border-top: <span class="hljs-number">4</span>px solid red<span class="hljs-comment">;</span>
+  background: black<span class="hljs-comment">;</span>
+  float: left<span class="hljs-comment">;;</span>
+}
+
+<span class="hljs-preprocessor">.box</span>1 {
+  <span class="hljs-preprocessor">.box</span><span class="hljs-comment">;</span>
+  <span class="hljs-preprocessor">.rotate</span>(<span class="hljs-number">20</span>deg)<span class="hljs-comment">;</span>
+}
+
+<span class="hljs-preprocessor">.box</span>2 {
+  <span class="hljs-preprocessor">.box</span><span class="hljs-comment">;</span>
+  <span class="hljs-preprocessor">.rotate</span>(<span class="hljs-number">45</span>deg)<span class="hljs-comment">;</span>
+}
+
+<span class="hljs-preprocessor">.box</span>3 {
+  <span class="hljs-preprocessor">.box</span><span class="hljs-comment">;</span>
+  <span class="hljs-preprocessor">.rotate</span>(<span class="hljs-number">90</span>deg)<span class="hljs-comment">;</span>
+}
+
+<span class="hljs-preprocessor">.box</span>4 {
+  <span class="hljs-preprocessor">.box</span><span class="hljs-comment">;</span>
+  <span class="hljs-preprocessor">.rotate</span>(<span class="hljs-number">180</span>deg)<span class="hljs-comment">;</span>
+}
+
+<span class="hljs-preprocessor">.box</span>5 {
+  <span class="hljs-preprocessor">.box</span><span class="hljs-comment">;</span>
+  <span class="hljs-preprocessor">.rotate</span>(<span class="hljs-number">270</span>deg)<span class="hljs-comment">;</span>
+
+}
+<span class="hljs-preprocessor">.box</span>6 {
+  <span class="hljs-preprocessor">.box</span><span class="hljs-comment">;</span>
+  <span class="hljs-preprocessor">.rotate</span>(<span class="hljs-number">360</span>deg)<span class="hljs-comment">;</span>
+}</pre> <p>#####CSS</p> <pre class="prettyprint"><span class="hljs-class">.box</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.box1</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">rotate(<span class="hljs-number">20</span>deg)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.box2</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">rotate(<span class="hljs-number">45</span>deg)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.box3</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">rotate(<span class="hljs-number">90</span>deg)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.box4</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">rotate(<span class="hljs-number">180</span>deg)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.box5</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">rotate(<span class="hljs-number">270</span>deg)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.box6</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">rotate(<span class="hljs-number">360</span>deg)</span></span></span>;
+<span class="hljs-rule">}</span></span></pre> <p>#####效果</p> <p><img src="http://img.blog.csdn.net/20150602154828506" alt="这里写图片描述"></p> <blockquote>
+  从左至右依次为box1~box6，我们可以看出，在CSS中，所有角度值的变化都如图片中下半部分所示，请注意体会，如果不清楚，请看下图，我加入了单位格子为100*100的网格线，还有边框为4PX的外层DIV，并取消各个box的margin值以后的效果：
+</blockquote> <p><img src="http://img.blog.csdn.net/20150602161422475" alt="这里写图片描述"></p> <blockquote>
+  可以看到，实际上，rotate的旋转是围绕着一个圆心的，而默认不设置圆心位置的话，圆心就是旋转元素自身的几何中心，即（50%，50%），上图是我将圆心设置为（0%，0%）后的效果。
+</blockquote> <p>看看我的代码（less中的代码）:</p> <pre class="prettyprint">.<span class="hljs-keyword">rotate</span>(<span class="hljs-variable">@angle</span>) {
+  transform: <span class="hljs-keyword">rotate</span>(<span class="hljs-variable">@angle</span>);
+  transform-origin:<span class="hljs-number">0</span>% <span class="hljs-number">0</span><span class="hljs-variable">%;</span> <span class="hljs-comment">//这里就是设置圆心的代码</span>
+}</pre> <blockquote>
+  你可以自己尝试一下设置不同的圆心效果有何不同哦！
+</blockquote> <p>####2 、skew 【扭曲】</p> <p>#####用法</p> <pre><code>    transform:skew(&amp;lt;angle&amp;gt; [, &amp;lt;angle&amp;gt;]);
+    
+    第一个参数为x轴的斜切角度，第二个参数为Y轴斜切角度，也可以分别来写：
+    
+    transform:skewX(&amp;lt;angle&amp;gt;); |  transform:skewY(&amp;lt;angle&amp;gt;);
+</code></pre> <p>#####HTML</p> <pre class="prettyprint"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;content&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;box1&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;box2&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;box3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;box4&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;box5&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;box6&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</pre> <p>#####less</p> <pre class="prettyprint"><span class="hljs-class">.skew</span>(<span class="hljs-at_rule">@x_angle:<span class="hljs-number">0</span>;</span><span class="hljs-at_rule">@y_angle:<span class="hljs-number">0</span>){</span>
+  <span class="hljs-attribute">transform</span><span class="hljs-value">: skew(@x_angle,@y_angle);</span>
+}
+
+<span class="hljs-tag">body</span>{
+  <span class="hljs-attribute">background</span><span class="hljs-value">: url(<span class="hljs-string">&quot;bg.png&quot;</span>) repeat;</span>
+}
+
+<span class="hljs-class">.content</span> {
+  <span class="hljs-attribute">position</span><span class="hljs-value">: relative;</span>
+  <span class="hljs-attribute">margin-left</span><span class="hljs-value">: <span class="hljs-number">100</span>px;</span>
+  <span class="hljs-attribute">margin-top</span><span class="hljs-value">: <span class="hljs-number">100</span>px;</span>
+  <span class="hljs-attribute">width</span><span class="hljs-value">: <span class="hljs-number">1400</span>px;</span>
+  <span class="hljs-attribute">height</span><span class="hljs-value">: <span class="hljs-number">800</span>px;</span>
+  <span class="hljs-attribute">border</span><span class="hljs-value">: <span class="hljs-number">4</span>px solid <span class="hljs-hexcolor">#ffff00</span>;</span>
+}
+<span class="hljs-class">.box</span> {
+  <span class="hljs-attribute">width</span><span class="hljs-value">: <span class="hljs-number">100</span>px;</span>
+  <span class="hljs-attribute">height</span><span class="hljs-value">: <span class="hljs-number">100</span>px;</span>
+  <span class="hljs-attribute">border-top</span><span class="hljs-value">: <span class="hljs-number">4</span>px solid red;</span>
+  <span class="hljs-attribute">background</span><span class="hljs-value">: black;</span>
+  <span class="hljs-attribute">margin-right</span><span class="hljs-value">: <span class="hljs-number">100</span>px;</span>
+  <span class="hljs-attribute">float</span><span class="hljs-value">: left;</span>
+  <span class="hljs-attribute">color</span><span class="hljs-value">:<span class="hljs-hexcolor">#ffffff</span>;</span>
+}
+
+<span class="hljs-class">.box1</span>{
+  <span class="hljs-class">.box</span>;
+  <span class="hljs-class">.skew</span>(30deg);
+}
+
+<span class="hljs-class">.box2</span>{
+  <span class="hljs-class">.box</span>;
+  <span class="hljs-class">.skew</span>(0deg,30deg);
+}
+
+<span class="hljs-class">.box3</span>{
+  <span class="hljs-class">.box</span>;
+  <span class="hljs-class">.skew</span>(30deg,30deg);
+}
+
+<span class="hljs-class">.box4</span>{
+   <span class="hljs-class">.box</span>;
+   <span class="hljs-class">.skew</span>(50deg);
+ }
+
+<span class="hljs-class">.box5</span>{
+  <span class="hljs-class">.box</span>;
+  <span class="hljs-class">.skew</span>(130deg);
+}
+
+<span class="hljs-class">.box6</span>{
+  <span class="hljs-class">.box</span>;
+  <span class="hljs-class">.skew</span>(170deg);
+}</pre> <p>#####css</p> <pre class="prettyprint"><span class="hljs-tag">body</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">&quot;bg.png&quot;</span>)</span> repeat</span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.content</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">1400</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">800</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid <span class="hljs-hexcolor">#ffff00</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.box</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ffffff</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.box1</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ffffff</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">skew(<span class="hljs-number">30</span>deg, <span class="hljs-number">0</span>)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.box2</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ffffff</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">skew(<span class="hljs-number">0</span>deg, <span class="hljs-number">30</span>deg)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.box3</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ffffff</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">skew(<span class="hljs-number">30</span>deg, <span class="hljs-number">30</span>deg)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.box4</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ffffff</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">skew(<span class="hljs-number">50</span>deg, <span class="hljs-number">0</span>)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.box5</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ffffff</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">skew(<span class="hljs-number">130</span>deg, <span class="hljs-number">0</span>)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.box6</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-top</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px solid red</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> black</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ffffff</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">skew(<span class="hljs-number">170</span>deg, <span class="hljs-number">0</span>)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</pre> <p>#####效果</p> <p><img src="http://img.blog.csdn.net/20150602165409825" alt="这里写图片描述"></p> <blockquote>
+  从左至右分别是box1~box6，我们可以看出，box4与box5，分别在X轴斜切角度为50deg和130deg，而它们相对于Y轴对称，我们可以由此得出：skew的角度范围为0~180deg，不能为90deg，为什么不能为90deg呢，你可以试试就知道了。
+<p>同样滴，斜切也是有参照圆心的，依旧是transform-origin。这个大家可以自己试验，之后的实验中再不说明。
+</p></blockquote><p></p> <p>####3、translate [平移]</p> <p>#####用法</p> <pre><code>    transform:translate(&amp;lt;length&amp;gt; [, &amp;lt;length&amp;gt;]);
+    
+    第一个参数为x轴的平移距离，第二个参数为Y轴平移距离，也可以分别来写：
+    
+    transform:translateX(&amp;lt;length&amp;gt;); |  transform:translateY(&amp;lt;length&amp;gt;);
+</code></pre> <blockquote>
+  这个比较简单，没什么特别说明的，就不演示代码了
+</blockquote> <p>####4、scale[缩放]</p> <p>#####用法</p> <pre><code>    transform:scale(&amp;lt;number&amp;gt; [, &amp;lt;number&amp;gt;]);
+    
+    第一个参数为x轴的缩放倍数，第二个参数为Y轴缩放倍数，均支持小数，也可以分别来写：
+    
+    transform:scaleX(&amp;lt;number&amp;gt;); |  transform:scaleY(&amp;lt;number&amp;gt;);
+</code></pre> <blockquote>
+  这个也比较简单，没什么特别说明的，就不演示代码了
+</blockquote> <p>####5、matrix[矩阵变形]</p> <p>#####用法</p> <pre><code>    matrix(&amp;lt;number&amp;gt;,&amp;lt;number&amp;gt;,&amp;lt;number&amp;gt;,&amp;lt;number&amp;gt;,&amp;lt;number&amp;gt;,&amp;lt;number&amp;gt;)：
+    
+    以一个含六值的(a,b,c,d,e,f)变换矩阵的形式指定一个2D变换，相当于直接应用一个[a,b,c,d,e,f]变换矩阵
+</code></pre> <blockquote>
+  由于本人数学是渣渣，对于矩阵也是不甚了解，所以这里不知如何下手，如果有知道的大神能制作一个关于此的教程，请劳烦第一时间告知一下文章地址。
+</blockquote></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">11/18/2018, 8:36:18 PM</span></div></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/45.0b55823e.js" defer></script><script src="/assets/js/app.ead8df97.js" defer></script>
+  </body>
+</html>

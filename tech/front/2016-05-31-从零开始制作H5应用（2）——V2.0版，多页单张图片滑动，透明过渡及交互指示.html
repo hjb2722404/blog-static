@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>从零开始制作H5应用（2）——V2.0版，多页单张图片滑动，透明过渡及交互指示 | 国王说</title>
+    <meta name="description" content="国王何博士的生活记录">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.2e185082.css" as="style"><link rel="preload" href="/assets/js/app.ead8df97.js" as="script"><link rel="preload" href="/assets/js/57.70a788e6.js" as="script"><link rel="prefetch" href="/assets/js/10.1017c9d8.js"><link rel="prefetch" href="/assets/js/11.7fce1b1e.js"><link rel="prefetch" href="/assets/js/12.2e3bf50c.js"><link rel="prefetch" href="/assets/js/13.2575f685.js"><link rel="prefetch" href="/assets/js/14.1bb2b4f2.js"><link rel="prefetch" href="/assets/js/15.dda03764.js"><link rel="prefetch" href="/assets/js/16.fea1d20c.js"><link rel="prefetch" href="/assets/js/17.e50dcb9b.js"><link rel="prefetch" href="/assets/js/18.efd3f072.js"><link rel="prefetch" href="/assets/js/19.b7f8dac4.js"><link rel="prefetch" href="/assets/js/2.19b0dc99.js"><link rel="prefetch" href="/assets/js/20.05087f96.js"><link rel="prefetch" href="/assets/js/21.a2585747.js"><link rel="prefetch" href="/assets/js/22.48f65c5a.js"><link rel="prefetch" href="/assets/js/23.02d3d317.js"><link rel="prefetch" href="/assets/js/24.f6b65d74.js"><link rel="prefetch" href="/assets/js/25.1c218641.js"><link rel="prefetch" href="/assets/js/26.b4a1d3b5.js"><link rel="prefetch" href="/assets/js/27.0b23edb0.js"><link rel="prefetch" href="/assets/js/28.97c60e66.js"><link rel="prefetch" href="/assets/js/29.7070549f.js"><link rel="prefetch" href="/assets/js/3.8a2f839d.js"><link rel="prefetch" href="/assets/js/30.f696bd8c.js"><link rel="prefetch" href="/assets/js/31.db6ee67c.js"><link rel="prefetch" href="/assets/js/32.68c934a2.js"><link rel="prefetch" href="/assets/js/33.28adedf7.js"><link rel="prefetch" href="/assets/js/34.1ae3f31c.js"><link rel="prefetch" href="/assets/js/35.a27aa42b.js"><link rel="prefetch" href="/assets/js/36.2c36116d.js"><link rel="prefetch" href="/assets/js/37.2d379f91.js"><link rel="prefetch" href="/assets/js/38.c2e0280f.js"><link rel="prefetch" href="/assets/js/39.9a138254.js"><link rel="prefetch" href="/assets/js/4.dfea2b60.js"><link rel="prefetch" href="/assets/js/40.10521c1e.js"><link rel="prefetch" href="/assets/js/41.6d1c3c37.js"><link rel="prefetch" href="/assets/js/42.613f6fa6.js"><link rel="prefetch" href="/assets/js/43.644f89cb.js"><link rel="prefetch" href="/assets/js/44.6b95669a.js"><link rel="prefetch" href="/assets/js/45.0b55823e.js"><link rel="prefetch" href="/assets/js/46.ab7b9456.js"><link rel="prefetch" href="/assets/js/47.ffd63a58.js"><link rel="prefetch" href="/assets/js/48.02a68374.js"><link rel="prefetch" href="/assets/js/49.be43475a.js"><link rel="prefetch" href="/assets/js/5.29595ea1.js"><link rel="prefetch" href="/assets/js/50.64a710f5.js"><link rel="prefetch" href="/assets/js/51.48a01f2b.js"><link rel="prefetch" href="/assets/js/52.98d26fd4.js"><link rel="prefetch" href="/assets/js/53.e6c45cc2.js"><link rel="prefetch" href="/assets/js/54.6a350247.js"><link rel="prefetch" href="/assets/js/55.dd0a42bf.js"><link rel="prefetch" href="/assets/js/56.24c1ec5c.js"><link rel="prefetch" href="/assets/js/58.3e44f315.js"><link rel="prefetch" href="/assets/js/59.456021da.js"><link rel="prefetch" href="/assets/js/6.609a1a07.js"><link rel="prefetch" href="/assets/js/60.a8d4247b.js"><link rel="prefetch" href="/assets/js/61.7d910e19.js"><link rel="prefetch" href="/assets/js/62.29a244b8.js"><link rel="prefetch" href="/assets/js/63.823413d9.js"><link rel="prefetch" href="/assets/js/64.ce1e84e1.js"><link rel="prefetch" href="/assets/js/65.40e53246.js"><link rel="prefetch" href="/assets/js/66.a0628caf.js"><link rel="prefetch" href="/assets/js/67.a13c1a1c.js"><link rel="prefetch" href="/assets/js/68.ec323706.js"><link rel="prefetch" href="/assets/js/69.d8053fcc.js"><link rel="prefetch" href="/assets/js/7.361f8558.js"><link rel="prefetch" href="/assets/js/70.fbe6b8b8.js"><link rel="prefetch" href="/assets/js/71.a63191e5.js"><link rel="prefetch" href="/assets/js/72.2356be99.js"><link rel="prefetch" href="/assets/js/73.3d7ebefd.js"><link rel="prefetch" href="/assets/js/74.fb4bb5cf.js"><link rel="prefetch" href="/assets/js/75.63436a22.js"><link rel="prefetch" href="/assets/js/76.6f5d972d.js"><link rel="prefetch" href="/assets/js/77.1f5cac04.js"><link rel="prefetch" href="/assets/js/78.835937ec.js"><link rel="prefetch" href="/assets/js/79.9f4531c9.js"><link rel="prefetch" href="/assets/js/8.5d2b4e47.js"><link rel="prefetch" href="/assets/js/80.9d4b820b.js"><link rel="prefetch" href="/assets/js/81.8d7f4b8b.js"><link rel="prefetch" href="/assets/js/82.c9a97315.js"><link rel="prefetch" href="/assets/js/83.49148838.js"><link rel="prefetch" href="/assets/js/84.a1a254c4.js"><link rel="prefetch" href="/assets/js/85.eab49b81.js"><link rel="prefetch" href="/assets/js/86.825d20c5.js"><link rel="prefetch" href="/assets/js/87.852254bc.js"><link rel="prefetch" href="/assets/js/88.71609026.js"><link rel="prefetch" href="/assets/js/89.af91a4e1.js"><link rel="prefetch" href="/assets/js/9.2039d6db.js"><link rel="prefetch" href="/assets/js/90.fb5586e5.js"><link rel="prefetch" href="/assets/js/91.a75fa19c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2e185082.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">国王说</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">技术迷思</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech/front/" class="nav-link router-link-active">前端乱炖</a></li><li class="dropdown-item"><!----> <a href="/tech/back/" class="nav-link">后端打滚</a></li><li class="dropdown-item"><!----> <a href="/tech/tools/" class="nav-link">工具方法</a></li><li class="dropdown-item"><!----> <a href="/tech/other/" class="nav-link">其他一切</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">生活哲思</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/life/movie/" class="nav-link">影评系列</a></li><li class="dropdown-item"><!----> <a href="/life/arch/" class="nav-link">杂文随想</a></li><li class="dropdown-item"><!----> <a href="/life/poem/" class="nav-link">诗歌骈文</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于我</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">技术迷思</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech/front/" class="nav-link router-link-active">前端乱炖</a></li><li class="dropdown-item"><!----> <a href="/tech/back/" class="nav-link">后端打滚</a></li><li class="dropdown-item"><!----> <a href="/tech/tools/" class="nav-link">工具方法</a></li><li class="dropdown-item"><!----> <a href="/tech/other/" class="nav-link">其他一切</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">生活哲思</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/life/movie/" class="nav-link">影评系列</a></li><li class="dropdown-item"><!----> <a href="/life/arch/" class="nav-link">杂文随想</a></li><li class="dropdown-item"><!----> <a href="/life/poem/" class="nav-link">诗歌骈文</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于我</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>从零开始制作H5应用（2）——V2.0版，多页单张图片滑动，透明过渡及交互指示</span> <!----></p> <ul class="sidebar-group-items"></ul></div></li></ul> </div> <div class="page"> <div class="content"><p>上一次，我们制作了我们第一个<a href="http://blog.csdn.net/hjb2722404/article/details/46363367" target="_blank" rel="noopener noreferrer">H5场景应用的V1.0版<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，这次我们趁热打铁，在上一版的基础上对层序进行修改和扩展。</p> <p>###<strong>任务</strong></p> <blockquote>
+  1、页面数量由3张增加至9张；     
+  2、每张页面中放入一张全屏自适应的图片；     
+  3、修复页面过渡中的白场，并在过渡时加入页面的透明效果     
+  4、给予用户“向上滑动“的交互提示；
+</blockquote> <p>###<strong>分析</strong></p> <p>老规矩，拿到任务需求后，我们还是要先具体分析每一步的实现思路：</p> <p>1.页面数量由3张增加至9张</p> <blockquote>
+  这个太简单啦，就是再复制出来6个div，并给他们添加类名就可以啦：）
+</blockquote> <p>2、每张页面中放入一张全屏自适应的图片</p> <blockquote>
+  这一项的关键在于自适应，可否知道 **img {width:100%}**的写法？
+</blockquote> <p>3、修复页面过渡中的白场并加入透明效果</p> <blockquote>
+  白场问题是由于我们的切换方式是隐藏/显示，所以这一次我们改为让它移出屏幕主体，而不是隐藏，而透明效果则需要替换animation属性啦。
+</blockquote> <p>4、给予用户“向上滑动”的交互提示</p> <blockquote>
+  这个问题只需要一张png图片并加一点循环的动画（animation)就可以啦！
+</blockquote> <p>###<strong>实现</strong></p> <p>####第一步，增加页面数量</p> <p>index.html</p> <pre class="prettyprint"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;pages&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page1&quot;</span>&gt;</span>页面一<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page2&quot;</span>&gt;</span>页面二<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page3&quot;</span>&gt;</span>页面三<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page4&quot;</span>&gt;</span>页面四<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page5&quot;</span>&gt;</span>页面五<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page6&quot;</span>&gt;</span>页面六<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page7&quot;</span>&gt;</span>页面七<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page8&quot;</span>&gt;</span>页面八<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page9&quot;</span>&gt;</span>页面九<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre> <p>style.css</p> <pre class="prettyprint">……
+<span class="hljs-class">.page3</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> yellow</span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.page4</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#AA22FF</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.page5</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ff050e</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.page6</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#999999</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.page7</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#444400</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.page8</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#267DB7</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.page9</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#ffcc80</span></span></span>;
+<span class="hljs-rule">}</span></span>
+……</pre> <p>看看效果：</p> <p><img src="http://img.blog.csdn.net/20150605090446721" alt="这里写图片描述"></p> <blockquote>
+  这一次，由于要调试自适应，所以我们使用了火狐浏览器自带firebug的自适应调试模式，并开启了手势操作模拟功能。
+</blockquote> <p>####第二步：每页加入全屏自适应图片</p> <p>我们在百度图片上下载了如下图片：</p> <p><img src="http://img.blog.csdn.net/20150605092314323" alt="这里写图片描述"></p> <blockquote>
+  这些图片大多是640*900的分辨率，因为手机设备目前最大宽度是640px，至于高宽比，为了更好地自适应，越大越好。
+</blockquote> <p>然后添加到页面中并在css中加入自适应的样式：</p> <p>index.html</p> <pre class="prettyprint"> <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;pages&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/001.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page2&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/002.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page3&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/003.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page4&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/004.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page5&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/005.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page6&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/006.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page7&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/007.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page8&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/008.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page9&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/009.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre> <p>style.css</p> <pre class="prettyprint">……
+<span class="hljs-class">.page</span> <span class="hljs-tag">img</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>%</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>%</span></span>;
+<span class="hljs-rule">}</span></span>
+……</pre> <p>看看效果：</p> <p><img src="http://img.blog.csdn.net/20150605092506277" alt="这里写图片描述"></p> <blockquote>
+  这里要特别注意的是，你的图片比例必须与主流设备分辨率的宽高比尽量接近，否则同时设置图片宽和高都为100%时，会有一定程度的变形。如果想避免这种情况出现，可以将图片设为外层DIV 的背景图片，并使用backgroud-size来设置图片自适应。
+</blockquote> <p>####第三步：修复白场，加入透明效果</p> <blockquote>
+  这里我们得重新设计一下，在初始状态下，所有的页面都是显示的，但由于所有页面都是重叠的，所以只要设置第一页的z-index为这些页面中的最大值，就可以保证第一页覆盖在所有页面之上，从而造成只显示第一页的效果。
+</blockquote> <p>改造后的CSS如下：</p> <p>style.css</p> <pre class="prettyprint">……
+<span class="hljs-class">.page</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100</span>%</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100</span>%</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> white</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">1</span></span></span>;
+<span class="hljs-rule">}</span></span>
+……
+<span class="hljs-class">.page1</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> blue</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">100</span></span></span>;
+<span class="hljs-rule">}</span></span>
+……
+<span class="hljs-class">.hide</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">1</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.show</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">100</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</pre> <p>再看看切换效果：</p> <p><img src="http://img.blog.csdn.net/20150605094205247" alt="这里写图片描述"></p> <p>我们发现，在下一页向上滑动出现的过程中，下一层总是显示最后一个页面，而且在第一轮切换结束后，第二轮的切换就没有了过渡动画，这是为什么呢？</p> <p>我们发现，我们在页面切换时除了给下一页增加show类（z-index:100）的时候，给当前页增加了一个hide类（z-index:1）,而我们发现，此时其他所有的页面也都是z-index:1,按照浏览器默认规则，z-index相同的元素，最后加载的在最上层</p> <p>并且第一轮切换时给页面加的各种动画效果都没有及时清除，导致第二轮效果无法生效，所以会出现图中所示状况。</p> <p>好了，知道了原因，我们再次对css和JS进行改造，并且让图片切换时显示一定的透明度渐变效果（通过改变从animation.css里调用的动画名来实现）：</p> <p>style.css</p> <pre class="prettyprint">……
+<span class="hljs-class">.hide</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"><span class="hljs-number">99</span></span></span>;
+<span class="hljs-rule">}</span></span>
+……
+</pre> <p>myfn.js</p> <pre class="prettyprint"><span class="hljs-keyword">var</span> curpage=<span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> totalpage,nextpage,lastpage,nexttotalpage;
+
+$(document).swipeUp(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+
+<span class="hljs-comment">//判断当前页是否为最后一页</span>
+
+        <span class="hljs-comment">//获取总页数,以及总页数的+1后的序号，供后面for循环使用</span>
+    totalpage = $(<span class="hljs-string">&quot;.page&quot;</span>).length;
+    nexttotalpage = totalpage+<span class="hljs-number">1</span>;
+    <span class="hljs-comment">//如果是最后一页，显示第一页，并移除所有page上的所有css效果类，否则显示下一页，并移除上一页的切换动画效果</span>
+    <span class="hljs-keyword">if</span>(curpage == totalpage){
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">1</span>; i&lt;nexttotalpage;i++){
+            $(<span class="hljs-string">&quot;.page&quot;</span>+i).removeClass(<span class="hljs-string">&quot;hide&quot;</span>);
+            $(<span class="hljs-string">&quot;.page&quot;</span>+i).removeClass(<span class="hljs-string">&quot;show&quot;</span>);
+            $(<span class="hljs-string">&quot;.page&quot;</span>+i).removeClass(<span class="hljs-string">&quot;pt-page-moveFromBottomFade&quot;</span>);
+        }
+        $(<span class="hljs-string">&quot;.page1&quot;</span>).addClass(<span class="hljs-string">&quot;show&quot;</span>);
+        $(<span class="hljs-string">&quot;.page1&quot;</span>).addClass(<span class="hljs-string">&quot;pt-page-moveFromBottomFade&quot;</span>);
+        curpage =<span class="hljs-number">1</span>;
+    }<span class="hljs-keyword">else</span>{
+        nextpage = curpage+<span class="hljs-number">1</span>;
+        lastpage = curpage-<span class="hljs-number">1</span>;
+        $(<span class="hljs-string">&quot;.page&quot;</span>+curpage).removeClass(<span class="hljs-string">&quot;pt-page-moveFromBottomFade&quot;</span>);
+        $(<span class="hljs-string">&quot;.page&quot;</span>+curpage).addClass(<span class="hljs-string">&quot;pt-page-moveToTopFade&quot;</span>);
+        $(<span class="hljs-string">&quot;.page&quot;</span>+curpage).removeClass(<span class="hljs-string">&quot;show&quot;</span>);
+        $(<span class="hljs-string">&quot;.page&quot;</span>+curpage).addClass(<span class="hljs-string">&quot;hide&quot;</span>);
+        $(<span class="hljs-string">&quot;.page&quot;</span>+nextpage).removeClass(<span class="hljs-string">&quot;hide&quot;</span>);
+        $(<span class="hljs-string">&quot;.page&quot;</span>+nextpage).addClass(<span class="hljs-string">&quot;show&quot;</span>);
+        $(<span class="hljs-string">&quot;.page&quot;</span>+nextpage).addClass(<span class="hljs-string">&quot;pt-page-moveFromBottomFade&quot;</span>);
+        $(<span class="hljs-string">&quot;.page&quot;</span>+lastpage).removeClass(<span class="hljs-string">&quot;pt-page-moveToTopFade&quot;</span>);
+        curpage = nextpage;
+    }
+});</pre> <p>现在我们再看效果：</p> <p><img src="http://img.blog.csdn.net/20150605172136158" alt="这里写图片描述"></p> <p><img src="http://img.blog.csdn.net/20150605172031895" alt="这里写图片描述"></p> <p>这次就正常了，并且切换时有了透明效果。</p> <p>####第四步 交互指示</p> <p>我们准备了下面这张png图片作为向上的指示图片：</p> <p><img src="http://img.blog.csdn.net/20150605173628371" alt="这里写图片描述"></p> <p>我们将它布局到index.html最后面</p> <p>index.html</p> <pre class="prettyprint">……
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;upicon&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;upicon.png&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></pre> <p>然后在style.css里给它定义样式，记住，一定要让它的z-index大于100！因为我们之前给当前页设置的样式z-index的值是100，要保证箭头一直处在最上层。</p> <p>style.css</p> <pre class="prettyprint">……
+<span class="hljs-class">.show</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">100</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.upicon</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">60</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">60</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">50</span>%</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">bottom</span>:<span class="hljs-value"> <span class="hljs-number">20</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> -<span class="hljs-number">30</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">z-index</span>:<span class="hljs-value"> <span class="hljs-number">1000</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.upicon</span> <span class="hljs-tag">img</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">60</span>px</span></span>;
+<span class="hljs-rule">}</span></span></pre> <blockquote>
+  这里有一点小技巧：当position为absolute时，left:50%,margin-left:-width/2，可以保证元素水平居中。如果想垂直也居中，则使用 top:50%,margin-top:-height/2  
+</blockquote> <p>看看效果：</p> <p><img src="http://img.blog.csdn.net/20150605174743470" alt="这里写图片描述"></p> <p>最后，我们让它动起来，给它添加一个循环的上下运动的效果就可以了，我们在index.html里引入<a href="https://daneden.github.io/animate.css/" target="_blank" rel="noopener noreferrer">animate.css插件<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>并给箭头元素添加animation动画：</p> <p>index.html</p> <pre class="prettyprint"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">&quot;en&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">http-equiv</span>=<span class="hljs-value">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">&quot;IE=edge&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;viewport&quot;</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">&quot;width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;renderer&quot;</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">&quot;webkit&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>H5场景应用1.0——实现页面滑动效果<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;animate.css&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/css&quot;</span>/&gt;</span> 
+    <span class="hljs-comment">&lt;!--上面引入animate.css插件--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;animations.css&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/css&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;style.css&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/css&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js&quot;</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;touch.js&quot;</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;myfn.js&quot;</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;pages&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/001.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page2&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/002.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page3&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/003.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page4&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/004.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page5&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/005.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page6&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/006.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page7&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/007.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page8&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/008.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;page page9&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;imgs/009.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;upicon animated infinite bounce &quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;upicon.png&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--上面应用animate的动画样式：animated infinite bounce--&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></pre> <p>看看效果：</p> <p><img src="http://img.blog.csdn.net/20150605180122378" alt="这里写图片描述"></p> <p><img src="http://img.blog.csdn.net/20150605180138384" alt="这里写图片描述"></p> <p>我们可以看到箭头已经实现了循环的上下跳动的动画，这样就可以在很好地给用户传递了此页面是可以向上滑动的友好的交互提示了。</p> <blockquote>
+  好了，至此，我们的第一个H5应用的V2.0版也完成，接下来的V3.0版本里，我们将继续完善和扩展我们的程序，敬请期待。
+</blockquote></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">11/18/2018, 8:36:18 PM</span></div></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/57.70a788e6.js" defer></script><script src="/assets/js/app.ead8df97.js" defer></script>
+  </body>
+</html>
